@@ -747,7 +747,20 @@ footer {
     filter: invert(1); /* Lueur rouge autour du logo */
 }
 
+/* Styles pour les écrans de largeur maximale 600px (mobile) */
 @media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    /* Navigation */
     .navbar ul {
         flex-direction: column;
         display: none;
@@ -761,6 +774,39 @@ footer {
         display: block;
         cursor: pointer;
     }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Sections */
+    .section {
+        padding: 10px;
+    }
+
+    .footer-logo {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    /* Ajustement de la galerie pour le mobile */
+    .photos, .videos {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 5px;
+    }
+
+    .photo-gallery h3, .video-gallery h3 {
+        font-size: 18px;
+    }
+
+    /* Ajustement des boutons */
+    .button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
 }
+
 
 
