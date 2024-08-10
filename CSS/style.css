@@ -1,4 +1,4 @@
-/* styles.css */
+/* Définition des variables CSS */
 :root {
     --color-primary: #1A2A40;
     --color-secondary: #dd2c00;
@@ -9,17 +9,19 @@
     --font-secondary: 'Oswald', sans-serif;
 }
 
+/* Style global */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
-img, source{
+img, source {
     user-select: none;
     -webkit-user-drag: none;
 }
 
+/* Bouton de retour en haut de la page */
 #backToTop {
     display: none; /* Caché par défaut */
     position: fixed;
@@ -46,6 +48,7 @@ img, source{
     transform: scale(1.1); /* Agrandit légèrement le bouton au survol */
 }
 
+/* Style pour les liens dans les listes */
 li a {
     text-decoration: none;
 }
@@ -56,6 +59,7 @@ ul {
     margin: 0;
 }
 
+/* Style de l'en-tête */
 header {
     position: relative;
     height: 550px;
@@ -75,6 +79,7 @@ header::before {
     z-index: 1;
 }
 
+/* Navigation */
 nav {
     display: flex;
     justify-content: space-between;
@@ -92,7 +97,7 @@ nav {
     filter: brightness(0) invert(1);
 }
 
-/* off-screen-menu */
+/* Menu hors écran */
 .off-screen-menu {
     background-color: black;
     height: 100vh;
@@ -174,13 +179,13 @@ nav {
     color: #000000;
 }
 
-/* nav */
+/* Navigation */
 nav {
     padding: 1rem;
     display: flex;
 }
 
-/* ham menu */
+/* Menu hamburger */
 .ham-menu {
     height: 50px;
     width: 40px;
@@ -207,7 +212,7 @@ nav {
     top: 25%;
 }
 
-.ham-menu span:nth-child(3) {
+ham-menu span:nth-child(3) {
     top: 75%;
 }
 
@@ -229,6 +234,7 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/* Texte du héros */
 .hero-text {
     position: absolute;
     top: 50%;
@@ -244,7 +250,7 @@ nav {
     margin: 0;
 }
 
-/*Section area*/
+/* Section des histoires */
 .story-area {
     margin: auto;
     padding: 20px;
@@ -312,7 +318,7 @@ nav {
     color: #a10000;
 }
 
-/*Service Section*/
+/* Section des services */
 .service-area {
     text-align: center;
     padding: 10px 20px;
@@ -361,7 +367,7 @@ nav {
 .service img {
     height: 150px;
     margin-bottom: 10px;
-    transition: color 0.8s ease;
+    transition: transform 0.8s ease;
 }
 
 .service:hover img {
@@ -369,15 +375,15 @@ nav {
 }
 
 .service h3 {
-    font-size: 20px;
-    margin: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
     font-family: var(--font-secondary);
+    color: #333;
     transition: color 0.3s ease;
 }
 
-.service:hover img,
 .service:hover h3 {
-    filter: brightness(0) invert(1);
+    color: #ffffff;
 }
 
 .overlay {
@@ -402,7 +408,7 @@ nav {
     opacity: 1;
 }
 
-/*Projects section */
+/* Section des projets */
 .projects-section {
     padding: 20px;
     color: white;
@@ -423,7 +429,7 @@ nav {
     color: #ffffff;
 }
 
-/*Slider style */
+/* Style du slider */
 .slider-container {
     display: flex;
     overflow-x: auto;
@@ -449,7 +455,7 @@ nav {
     height: 0;
 }
 
-/*Gallery section */
+/* Section galerie */
 .gallery-container {
     padding: 20px;
     display: flex;
@@ -491,7 +497,7 @@ nav {
     color: #ffffff;
 }
 
-/* styles.css */
+/* Responsive CSS */
 @media (max-width: 768px) {
     .logo img {
         height: 60px;
