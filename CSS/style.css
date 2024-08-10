@@ -65,7 +65,7 @@ ul{
 header {
     position: relative;
     height: 550px;
-    background: url('IMG/8971.jpg');
+    background: url("IMG/8971.jpg");
     background-size: cover;
 
     color: var(--color-text-light);
