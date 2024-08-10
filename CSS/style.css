@@ -747,6 +747,87 @@ footer {
     filter: invert(1); /* Lueur rouge autour du logo */
 }
 
+@media only screen and (max-width: 600px) {
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar.active ul {
+        display: flex;
+    }
+
+    .navbar-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+/* Styles pour les petits appareils (mobiles en portrait) */
+@media only screen and (max-width: 600px) {
+    /* Exemple d'ajustement pour mobile */
+    body {
+        padding: 10px;
+        font-size: 14px;
+    }
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+    .footer-logo {
+        width: 100px;
+    }
+    /* Ajustement des marges et des paddings pour mobile */
+    .main-content {
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+/* Styles pour les appareils moyens (tablettes) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    body {
+        padding: 15px;
+        font-size: 16px;
+    }
+    .container {
+        width: 90%;
+        padding: 0 10px;
+    }
+    .footer-logo {
+        width: 150px;
+    }
+    .main-content {
+        margin: 0 10px;
+        padding: 10px;
+    }
+}
+
+/* Styles pour les grands appareils (desktops) */
+@media only screen and (min-width: 769px) {
+    body {
+        padding: 20px;
+        font-size: 18px;
+    }
+    .container {
+        width: 80%;
+        padding: 0 20px;
+    }
+    .footer-logo {
+        width: 200px;
+    }
+    .main-content {
+        margin: 0 20px;
+        padding: 15px;
+    }
+}
+
+media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
 
 
 
