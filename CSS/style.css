@@ -750,138 +750,76 @@ footer {
 
 
 
+/* Largeur d'écran max de 768px (tablettes et petits écrans) */
 @media (max-width: 768px) {
-    .ham-menu {
-        display: block;
-    }
-    
-    .off-screen-menu ul {
-        display: flex;
+    nav {
         flex-direction: column;
     }
-    
-    .off-screen-menu.active {
-        display: block;
-    }
-}
 
-/* Media Queries for Responsive Design */
-
-/* Devices with a max-width of 768px (Tablets and smaller devices) */
-@media (max-width: 768px) {
-    /* Header adjustments */
-    header {
-        height: 50vh;
+    .main-content {
+        flex-direction: column;
     }
 
-    /* Logo adjustments */
-    .logo img {
-        max-height: 8vh;
+    .article {
+        flex: 1;
     }
 
-    /* Navigation bar */
-    nav {
-        padding: 1rem;
+    .story-area {
+        flex-direction: column;
+        padding: 15px;
     }
 
-    /* Services Section */
-    .service-area h1,
-    .projects-section h2,
-    .gallery-section h2 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
-    }
-
-    .services-section {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-
-    .service {
-        width: 45%;
-        padding: 10px;
-        margin: 5px 0;
-    }
-
-    /* Story Area */
-    .story-title h1 {
-        font-size: 1.8rem;
-    }
-
-    .story-text-area p {
-        font-size: 0.9rem;
-    }
-
-    /* Gallery Section */
-    .gallery-container {
-        grid-template-columns: repeat(auto-fill, minmax(90%, 1fr));
-    }
-
-    /* Slider */
-    .slider-container .slide {
-        min-width: 90%;
-    }
-
-    /* Hamburger Menu */
-    .ham-menu {
-        height: 40px;
-        width: 30px;
-    }
-
-    /* Off-Screen Menu */
-    .off-screen-menu {
+    .img-strory, .story-text-area {
         max-width: 100%;
-        right: -100%;
+        margin: 0;
+        padding: 10px;
     }
 
-    .off-screen-menu.active {
-        right: 0;
-    }
-}
-
-/* Devices with a max-width of 480px (Mobile devices) */
-@media (max-width: 480px) {
-    /* Header adjustments */
-    header {
-        height: 40vh;
+    .img-strory img {
+        height: 300px;
     }
 
-    /* Logo adjustments */
-    .logo img {
-        max-height: 6vh;
-    }
-
-    /* Hero Text */
-    .hero-text h1 {
-        font-size: 1.5rem;
-    }
-
-    /* Service Section */
-    .service {
-        width: 90%;
-    }
-
-    .service img {
-        height: 100px;
-    }
-
-    /* Story Area */
     .story-title h1 {
-        font-size: 1.5rem;
+        font-size: 30px;
     }
 
     .story-text-area p {
-        font-size: 0.8rem;
+        font-size: 18px;
+    }
+}
+
+/* Largeur d'écran max de 480px (mobiles) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
     }
 
-    /* Gallery Section */
-    .gallery-container {
-        grid-template-columns: 1fr;
+    nav a {
+        padding: 8px 16px;
+        font-size: 14px;
     }
 
-    /* Slider */
-    .slider-container .slide {
-        min-width: 100%;
+    .article h2 {
+        font-size: 24px;
+    }
+
+    .article p {
+        font-size: 16px;
+    }
+
+    .story-area {
+        padding: 10px;
+    }
+
+    .img-strory img {
+        height: 200px;
+    }
+
+    .story-title h1 {
+        font-size: 24px;
+    }
+
+    .story-text-area p {
+        font-size: 16px;
     }
 }
