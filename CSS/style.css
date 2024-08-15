@@ -756,13 +756,21 @@ footer {
         flex-direction: column;
     }
 
+    body{
+         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+
     .article {
         flex: 1;
     }
 
     .story-area {
         flex-direction: row;
-        padding: 15px;
+        padding: 5px;
+         box-sizing: border-box;
+        
     }
 
     .img-strory, .story-text-area {
@@ -780,7 +788,7 @@ footer {
     }
 
     .story-text-area p {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
