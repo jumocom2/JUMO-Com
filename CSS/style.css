@@ -757,7 +757,7 @@ footer {
     }
 
     .logo img{
-        height: 60px;
+        height: 50px;
         }
 
     body{
@@ -767,7 +767,7 @@ footer {
         }
 
     .hero-text h1{
-        font-size: 50px;
+        font-size: 70px;
         }
     
      header h1 {
@@ -806,7 +806,7 @@ footer {
     }
 
     .img-story img {
-        height: 30%;
+        height: 100px;
     }
 
     .story-title h1 {
@@ -819,46 +819,5 @@ footer {
 
     .story-text-area p {
         font-size: 0.5em;
-    }
-}
-
-/* Largeur d'écran max de 480px (mobiles) */
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-
-    nav a {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    .hero-text h1{
-        font-size: 15px;
-        }
-
-    .article h2 {
-        font-size: 24px;
-    }
-
-    .article p {
-        font-size: 16px;
-    }
-
-    .story-area {
-        flex-direction: row;
-        padding: 15px;
-    }
-
-    .img-strory img {
-        height: 250px;
-    }
-
-    .story-title h1 {
-        font-size: 24px;
-    }
-
-    .story-text-area p {
-        font-size: 10px;
     }
 }
