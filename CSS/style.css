@@ -753,7 +753,7 @@ footer {
 /* Largeur d'écran max de 768px (tablettes et petits écrans) */
 @media (max-width: 800px) {
     nav {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     body{
@@ -763,7 +763,7 @@ footer {
         }
 
     .hero-text h1{
-        font-size: 35px;
+        font-size: 50px;
         }
     
      header h1 {
@@ -790,12 +790,13 @@ footer {
     .story-area {
         flex-direction: row;
         padding: 5px;
+        gap: 5px;
          box-sizing: border-box;
         overflow: hidden;
         
     }
 
-    .img-strory, .story-text-area {
+    .img-story, .story-text-area {
         max-width: 100%;
         margin: 0;
         padding: 10px;
@@ -803,6 +804,7 @@ footer {
 
     .img-story img {
         height: 50%;
+        top: -50%;
     }
 
     .story-title h1 {
@@ -814,7 +816,7 @@ footer {
     }
 
     .story-text-area p {
-        font-size: 1em;
+        font-size: 0.5em;
     }
 }
 
