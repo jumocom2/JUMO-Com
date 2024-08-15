@@ -765,18 +765,17 @@ footer {
     }
 
     .story-area {
-        flex-direction: column;
         padding: 15px;
     }
 
     .img-strory, .story-text-area {
-        max-width: 100%;
+        max-width: 50%;
         margin: 0;
         padding: 10px;
     }
 
     .img-strory img {
-        height: 300px;
+        height: 150px;
     }
 
     .story-title h1 {
@@ -784,7 +783,7 @@ footer {
     }
 
     .story-text-area p {
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 
@@ -812,7 +811,7 @@ footer {
     }
 
     .img-strory img {
-        height: 200px;
+        height: 100px;
     }
 
     .story-title h1 {
@@ -820,6 +819,6 @@ footer {
     }
 
     .story-text-area p {
-        font-size: 16px;
+        font-size: 13px;
     }
 }
