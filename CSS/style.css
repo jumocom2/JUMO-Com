@@ -790,21 +790,19 @@ footer {
     .story-area {
         flex-direction: row;
         padding: 5px;
-        gap: 5px;
-         box-sizing: border-box;
+        box-sizing: border-box;
         overflow: hidden;
         
     }
 
     .img-story, .story-text-area {
-        max-width: 100%;
-        margin: 0;
+        max-width: 90%;
+        margin: 5px;
         padding: 10px;
     }
 
     .img-story img {
         height: 50%;
-        top: -50%;
     }
 
     .story-title h1 {
