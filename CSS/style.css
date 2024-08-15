@@ -756,6 +756,10 @@ footer {
         flex-direction: row;
     }
 
+    .logo img{
+        height: 60px;
+        }
+
     body{
         box-sizing: border-box;
         margin: 0;
@@ -788,11 +792,11 @@ footer {
     }
 
     .story-area {
-        flex-direction: row;
+        flex-direction: column;
         padding: 5px;
         box-sizing: border-box;
         overflow: hidden;
-        
+        height: auto;
     }
 
     .img-story, .story-text-area {
@@ -802,7 +806,7 @@ footer {
     }
 
     .img-story img {
-        height: 50%;
+        height: 30%;
     }
 
     .story-title h1 {
