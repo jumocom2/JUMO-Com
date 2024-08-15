@@ -756,26 +756,23 @@ footer {
         flex-direction: column;
     }
 
-    .main-content {
-        flex-direction: column;
-    }
-
     .article {
         flex: 1;
     }
 
     .story-area {
+        flex-direction: row;
         padding: 15px;
     }
 
     .img-strory, .story-text-area {
-        max-width: 50%;
+        max-width: 100%;
         margin: 0;
         padding: 10px;
     }
 
     .img-strory img {
-        height: 150px;
+        height: 100px;
     }
 
     .story-title h1 {
@@ -783,7 +780,7 @@ footer {
     }
 
     .story-text-area p {
-        font-size: 15px;
+        font-size: 12px;
     }
 }
 
@@ -807,11 +804,12 @@ footer {
     }
 
     .story-area {
-        padding: 10px;
+        flex-direction: row;
+        padding: 15px;
     }
 
     .img-strory img {
-        height: 100px;
+        height: 60px;
     }
 
     .story-title h1 {
@@ -819,6 +817,6 @@ footer {
     }
 
     .story-text-area p {
-        font-size: 13px;
+        font-size: 10px;
     }
 }
