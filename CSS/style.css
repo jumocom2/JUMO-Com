@@ -284,7 +284,7 @@ nav {
 
 .story-text-area{
     flex: 0.5;
-    max-width: 90%;
+    max-width: 48%;
     max-height: 98%;
     margin-left: 5px;
     align-items: center;
