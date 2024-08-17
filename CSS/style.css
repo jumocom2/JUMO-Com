@@ -825,9 +825,7 @@ footer {
 }
 
 .off-screen-menu ul li::before{
-    width: 95%;
-    height: 100%;
-    
+    width: 90%;
 }
 
     .article h2 {
