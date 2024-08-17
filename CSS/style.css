@@ -766,7 +766,7 @@ footer {
         }
 
     .hero-text h1{
-        font-size: 37px;
+        font-size: 30px;
         }
     
      header h1 {
@@ -777,6 +777,42 @@ footer {
         padding: 8px 16px;
         font-size: 12px;
     }
+
+    /* off-screen-menu */
+.off-screen-menu {
+    background-color:  black;
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    border: 5px solid red;
+    position: fixed;
+    top: 0;
+    right: -460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 2,5rem;
+    transition: .3s ease;
+    z-index: 100;
+}
+
+
+.off-screen-menu.active {
+    right: 50px;
+}
+
+.off-screen-menu ul li{
+    font-family: var(--font-secondary);
+    font-size: 18px;
+    margin-bottom: 5px;
+    padding: 10px;
+    min-width: 400px;
+    cursor: pointer;
+    transition: color 0.4s, linear;
+    position: relative;
+}
 
     .article h2 {
         font-size: 24px;
