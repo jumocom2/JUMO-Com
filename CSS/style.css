@@ -199,7 +199,7 @@ nav {
     height: 50px;
     width: 40px;
     margin-left: auto;
-    position: relative;
+    position: fixed;
     cursor: pointer;
 }
 
