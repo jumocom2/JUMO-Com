@@ -288,13 +288,13 @@ nav {
     max-height: 98%;
     margin-left: 5px;
     align-items: center;
+    text-align: center;
 }
 
 .story-title{
     height: 50px;
     max-width: 100%;
     text-align: center;
-    box-sizing: border-box;
     position: relative;
 }
 
@@ -750,7 +750,7 @@ footer {
 
 
 /* Largeur d'écran max de 768px (tablettes et petits écrans) */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     nav {
         flex-direction: row;
     }
