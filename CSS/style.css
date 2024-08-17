@@ -824,6 +824,12 @@ footer {
     position: relative;
 }
 
+.off-screen-menu ul li::before{
+    width: 95%;
+    height: 100%;
+    
+}
+
     .article h2 {
         font-size: 24px;
     }
