@@ -235,9 +235,6 @@ nav {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    left: 50%;
-    height: 5px;
-    position: fixed;
 }
 
 .ham-menu.active span:nth-child(3) {
