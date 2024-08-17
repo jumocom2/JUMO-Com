@@ -202,6 +202,7 @@ nav {
     position: relative;
     cursor: pointer;
 }
+
 .ham-menu span {
     height: 5px;
     width: 100%;
@@ -209,50 +210,41 @@ nav {
     border-radius: 25px;
     position: absolute;
     left: 50%;
-    top: 50%;
-    cursor: pointer;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     transition: .3s ease;
     z-index: 200;
 }
+
 .ham-menu span:nth-child(1) {
     top: 25%;
 }
+
+.ham-menu span:nth-child(2) {
+    top: 50%;
+}
+
 .ham-menu span:nth-child(3) {
     top: 75%;
 }
+
 .ham-menu.active span {
     background-color: white;
 }
-.ham-menu.active span:nth-child(1) {
+
+.ham-menu.active span:nth-child(1),
+.ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
-    height: 5px;
-    width: 100%;
-    border-radius: 25px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    cursor: pointer;
-    transition: .3s ease;
-    z-index: 200;
 }
+
+.ham-menu.active span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
 }
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    height: 5px;
-    width: 100%;
-    border-radius: 25px;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    cursor: pointer;
-    transition: .3s ease;
-    z-index: 200;
-}
+
 .hero-text {
     position: absolute;
     top: 50%;
