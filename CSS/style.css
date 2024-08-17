@@ -200,6 +200,8 @@ nav {
     width: 40px;
     margin-left: auto;
     position: fixed;
+    top: 20px; /* Ajuster la position en haut de la page */
+    right: 40px; /* Ajuster la position à droite */
     cursor: pointer;
 }
 
