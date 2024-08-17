@@ -227,6 +227,15 @@ nav {
 .ham-menu.active span:nth-child(1) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(45deg);
+    height: 5px;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    z-index: 200;
 }
 .ham-menu.active span:nth-child(2) {
     opacity: 0;
@@ -234,6 +243,15 @@ nav {
 .ham-menu.active span:nth-child(3) {
     top: 50%;
     transform: translate(-50%, -50%) rotate(-45deg);
+    height: 5px;
+    width: 100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    cursor: pointer;
+    transition: .3s ease;
+    z-index: 200;
 }
 .hero-text {
     position: absolute;
@@ -766,7 +784,7 @@ footer {
         }
 
     .hero-text h1{
-        font-size: 30px;
+        font-size: 25px;
         }
     
      header h1 {
